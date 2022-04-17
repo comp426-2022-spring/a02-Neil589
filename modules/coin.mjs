@@ -69,8 +69,8 @@ function countFlips(array) {
     heads: 0,
     tails: 0
   };
-  for (var i = 0; i < results.length; i++) {
-    if (results[i] === 'heads') {
+  for (var i = 0; i < array.length; i++) {
+    if (array[i] === 'heads') {
       counts.heads++;
     } else {
       counts.tails++;
