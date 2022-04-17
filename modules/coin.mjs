@@ -70,13 +70,13 @@ function countFlips(array) {
     heads: 0,
     tails: 0
   };
-  array.forEach(element =>  {
+  for (var i = 0; i < array.length; i++) {
     if (array[i] === 'heads') {
       counts.heads++;
     } else if (array[i] === 'tails'){
       counts.tails++;
-    } else{return "Error"};
-  });
+    } else{return "Error"}
+  }
   return counts;
 }
 // console.log(countFlips(coinFlips(40)));
