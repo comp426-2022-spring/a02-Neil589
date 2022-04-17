@@ -43,6 +43,7 @@ function coinFlips(flips) {
   for (var i = 0; i < flips; i++) {
     results.push(coinFlip());
   }
+  
   return results;
 }
 /*console.log(coinFlips(5));
