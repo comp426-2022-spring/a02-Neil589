@@ -93,6 +93,8 @@ function countFlips(array) {
  */
 
 function flipACoin(_call) {
+  if (_call !== "heads" && _call !=="tails"){
+    return}
   var result = coinFlip();
   if (result === _call) {
     return 'win';
