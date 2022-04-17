@@ -39,7 +39,7 @@ function coinFlip() {
 
 function coinFlips(flips) {
   if (flips<0||flips==0||typeof flips==="undefined"){flips = 1};
-  var results = [];
+  const results = [];
   for (var i = 0; i < flips; i++) {
     results.push(coinFlip());
   }
@@ -66,7 +66,7 @@ console.log(coinFlips(11))
 
 
 function countFlips(array) {
-  var counts = {
+  const counts = {
     heads: 0,
     tails: 0
   };
