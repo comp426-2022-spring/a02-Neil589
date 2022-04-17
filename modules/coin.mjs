@@ -38,6 +38,7 @@ function coinFlip() {
  */
 
 function coinFlips(flips) {
+  if (!(flips>0)){flips = 1};
   var results = [];
   for (var i = 0; i < flips; i++) {
     results.push(coinFlip());
