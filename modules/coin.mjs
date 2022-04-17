@@ -40,7 +40,7 @@ function coinFlip() {
 function coinFlips(flips) {
   var results = [];
   for (var i = 0; i < flips; i++) {
-    results.push(flipCoin());
+    results.push(coinFlip());
   }
   return results;
 }
@@ -62,6 +62,7 @@ console.log(coinFlips(11))
  * @param {string[]} array 
  * @returns {{ heads: number, tails: number }}
  */
+
 
 function countFlips(array) {
   var counts = {
