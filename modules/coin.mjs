@@ -93,7 +93,7 @@ function countFlips(array) {
 
 function flipACoin(_call) {
   var result = coinFlip();
-  if (result === guess) {
+  if (result === _call) {
     return 'win';
   } else {
     return 'lose';
