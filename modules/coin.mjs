@@ -73,9 +73,9 @@ function countFlips(array) {
   for (var i = 0; i < array.length; i++) {
     if (array[i] === 'heads') {
       counts.heads++;
-    } else {
+    } else if (array[i] === 'tails'){
       counts.tails++;
-    }
+    } else{return "Error";}
   }
   return counts;
 }
