@@ -38,12 +38,12 @@ function coinFlip() {
  */
 
 function coinFlips(flips) {
-  if (!(flips>0)){flips = 1};
-   const result = [];
-   for (let i=0;i<flips;i++){
-     result.push(Math.random() < 0.5 ? 'heads' : 'tails')
+  if (flips<0||flips==0){flips = 1};
+  var results = [];
+  for (var i = 0; i < flips; i++) {
+    results.push(coinFlip());
   }
-  return result;
+  return results;
 }
 /*console.log(coinFlips(5));
 console.log(coinFlips(2))
@@ -70,13 +70,13 @@ function countFlips(array) {
     heads: 0,
     tails: 0
   };
-  for (var i = 0; i < array.length; i++) {
+  array.forEach(element =>  {
     if (array[i] === 'heads') {
       counts.heads++;
     } else if (array[i] === 'tails'){
       counts.tails++;
-    } else{return "Error";}
-  }
+    } else{return "Error"};
+  });
   return counts;
 }
 // console.log(countFlips(coinFlips(40)));
