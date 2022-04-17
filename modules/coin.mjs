@@ -39,11 +39,11 @@ function coinFlip() {
 
 function coinFlips(flips) {
   if (!(flips>0)){flips = 1};
-  var results = [];
-  for (var i = 0; i < flips; i++) {
-    results.push(coinFlip());
+   const result = [];
+   for (let i=0;i<flips;i++){
+     result.push(Math.random() < 0.5 ? 'heads' : 'tails')
   }
-  return results;
+  return result;
 }
 /*console.log(coinFlips(5));
 console.log(coinFlips(2))
