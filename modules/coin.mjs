@@ -67,8 +67,8 @@ console.log(coinFlips(11))
 
 function countFlips(array) {
   const counts = {
-    heads: 0,
-    tails: 0
+    tails: 0,
+    heads: 0
   };
   array.forEach(index => {
     if (index === 'heads') {
