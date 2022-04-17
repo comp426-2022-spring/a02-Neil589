@@ -70,8 +70,8 @@ function countFlips(array) {
     heads: 0,
     tails: 0
   };
-  array.forEach(element => {
-    if (results[i] === 'heads') {
+  array.forEach(index => {
+    if (index === 'heads') {
       counts.heads++;
     } else {
       counts.tails++;
