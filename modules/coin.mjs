@@ -39,10 +39,11 @@ function coinFlip() {
 
 function coinFlips(flips) {
   if (flips<0||flips==0||typeof flips==="undefined"){flips = 1};
-  const result = [];
-  for (let i=0;i<flips;i++){
-    result.push(Math.random() < 0.5 ? 'heads' : 'tails')}
-  return result;
+  const results = [];
+  for (var i = 0; i < flips; i++) {
+    results.push(coinFlip());
+  }
+  return results;
 }
 /*console.log(coinFlips(5));
 console.log(coinFlips(2))
@@ -65,15 +66,18 @@ console.log(coinFlips(11))
 
 
 function countFlips(array) {
-  const result = {tails: 0, heads: 0}; 
-   array.forEach(element => {
-     if (element === "heads"){
-       result.heads++} else if (element === "tails"){
-       result.tails++} else {
-         return "Error"
-       };
-   });
-   return result;
+  const counts = {
+    heads: 0,
+    tails: 0
+  };
+  array.forEach(element => {
+    if (results[i] === 'heads') {
+      counts.heads++;
+    } else {
+      counts.tails++;
+    }
+  })
+  return counts;
 }
 // console.log(countFlips(coinFlips(40)));
 
