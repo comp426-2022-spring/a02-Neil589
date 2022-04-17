@@ -39,7 +39,7 @@ function coinFlip() {
 
 function coinFlips(flips) {
   var results = [];
-  for (var i = 0; i < numFlips; i++) {
+  for (var i = 0; i < flips; i++) {
     results.push(flipCoin());
   }
   return results;
