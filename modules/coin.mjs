@@ -94,7 +94,10 @@ function countFlips(array) {
 
 function flipACoin(_call) {
   if (_call !== "heads" && _call !=="tails"){
-    return}
+    // throw new Error("Error: no input.")
+    console.log("Error: no input. Usage: node guess-flip --call=[heads|tails]")
+    return;
+  }
   var results = coinFlip();
   if (results === _call) {
     return {call: _call, flip:results, result:'win'};
