@@ -64,7 +64,6 @@ console.log(coinFlips(11))
  * @returns {{ heads: number, tails: number }}
  */
 
-
 function countFlips(array) {
   const counts = {
     tails: 0,
